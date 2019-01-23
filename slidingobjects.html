@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+ $(document).ready(function(){
+   $("#flip").click(function(){
+     $("#panel").slideDown("slow");
+   });
+ });
+</script>
+<style>
+  #panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #00ff00;
+    border: solid 1px #FFFFFF;
+  }
+
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+</style>
+</head>
+<body>
+  <div id="flip">Click to slide down the panel</div>
+  <div id="panel">It works!!</div>
+</body>
+</html>
