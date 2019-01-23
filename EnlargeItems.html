@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PPU Lab 3, Task 3</title>
+
+  <link rel="stylesheet" type="text/css" href="theme.css">
+  <script src="jquery-3.1.1.min.js"></script>
+
+  <p>Wait for it..</p>
+  <p class="enlargeable">Jan 22 is what day?</p>
+  <p class="enlargeable">#CelebrationOfLifeDay</p>
+  <button id="enlarge">Enlarge</button>
+
+
+  <script>
+    $("button#enlarge").on("click", function(){
+      $("p.enlargeable").addClass("big");
+    });
+
+
+  </script>
+</head>
+</html>
